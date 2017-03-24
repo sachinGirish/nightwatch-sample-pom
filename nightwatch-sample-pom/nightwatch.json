@@ -1,0 +1,115 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports/XMLReports",
+  "custom_commands_path" : "",
+  "custom_assertions_path" : "",
+  "page_objects_path" : "pages",
+  "globals_path" : "",
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "lib/selenium/selenium-server-standalone-3.0.1.jar",
+    "start_session" : true,
+    "log_path" : "log/",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.gecko.driver" : "lib/drivers/geckodriver.exe",
+      "webdriver.chrome.driver" : "lib/drivers/chromedriver.exe",
+      "webdriver.ie.driver" : "lib/drivers/IEDriverServer.exe"
+    }
+  },
+
+  "test_settings" : {
+    "cbt" : {
+                 "selenium_host": "hub.crossbrowsertesting.com",
+                 "selenium_port": 80,
+                 "desiredCapabilities": {
+               "browser_api_name": "FF32",
+               "os_api_name": "Win8.1",
+               "browserName": "firefox",
+               "record_video" : "false",
+               "record_network" : "true",
+               "record_snapshot" : "true",
+               "username": "USERNAME",
+               "password": "PASSWORD"
+  }
+},
+ 
+    "default" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : true,
+        "path" : "screenshots/Default/"
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+
+
+
+
+
+
+
+
+
+
+    "ie" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : true,
+        "path" : "screenshots/IE/"
+      },
+      "desiredCapabilities": {
+        "browserName": "internet explorer"       
+      }
+    },
+    "safari" : {
+      "desiredCapabilities": {
+        "browserName": "safari"
+      }
+    },
+    "chrome" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : true,
+        "path" : "screenshots/Chrome/"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "args":["disable-web-security", "ignore-certificate-errors", "--test-type"]
+        }
+      }
+    },
+    "firefox" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : true,
+        "path" : "screenshots/Firefox/"
+      },
+        "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    }
+  }
+}

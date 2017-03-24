@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="tests"
+    errors="1" failures="0" hostname="" id="" package="tests" skipped="0"
+    tests="1" time="0.02400" timestamp="Fri, 24 Mar 2017 07:22:21 GMT">
+  
+    <testcase name="Open the website" time="0.02400" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Tests / Open the website]:
+
+  TypeError: browser.page.utils is not a function
+    at Object.Open the website (E:\strikingly\Project2\tests\tests.js:7:30)
+    at Module.call (E:\strikingly\Project2\lib\nightwatch\lib\runner\module.js:62:34)
+    at E:\strikingly\Project2\lib\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (E:\strikingly\Project2\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (E:\strikingly\Project2\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (E:\strikingly\Project2\node_modules\q\q.js:796:13)
+    at E:\strikingly\Project2\node_modules\q\q.js:556:49
+    at runSingle (E:\strikingly\Project2\node_modules\q\q.js:137:13)
+    at flush (E:\strikingly\Project2\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>
