@@ -21,20 +21,23 @@
   },
 
   "test_settings" : {
-    "cbt" : {
-                 "selenium_host": "hub.crossbrowsertesting.com",
-                 "selenium_port": 80,
-                 "desiredCapabilities": {
-               "browser_api_name": "FF32",
-               "os_api_name": "Win8.1",
-               "browserName": "firefox",
-               "record_video" : "false",
-               "record_network" : "true",
-               "record_snapshot" : "true",
-               "username": "USERNAME",
-               "password": "PASSWORD"
-  }
-},
+    "sauce_lab" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 80,
+      "selenium_host"  : "ondemand.saucelabs.com",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "username" : "xxxxx",
+      "access_key" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+
+      "desiredCapabilities": {
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
  
     "default" : {
       "launch_url" : "http://localhost",
@@ -51,17 +54,7 @@
         "acceptSslCerts": true
       }
     },
-
-
-
-
-
-
-
-
-
-
-
+    
     "ie" : {
       "launch_url" : "http://localhost",
       "selenium_port"  : 4444,
